@@ -1,0 +1,3 @@
+change nicotine Absorption % to 10-50
+Add Nicotine Yeald of cigarettes (0.4-2mg/cig)
+
