@@ -1,4 +1,18 @@
 ﻿Public Class Form1
+    Dim usernameIn As String = LoginForm1.UsernameTextBox.Text
+
+
+    'TODO:
+    '-------------------------------------->
+    'Add DateTimeSelector
+
+    'Add Warning for Too Much Nicotine
+
+    'Add Infobox for detailed explinations
+    '-------------------------------------->
+
+
+
     Private Sub btn1_Click(sender As Object, e As EventArgs) Handles btn1.Click
 
         Try
@@ -7,7 +21,7 @@
             Dim liquidVaped As Decimal = CDec(txtLiquid.Text)
             Dim mgPerMl As Decimal = CDec(txtMgml.Text)
             Dim cost As Decimal = CDec(txtCostML.Text)
-            Dim efficiency As Decimal = CDec(cbEfficiency.SelectedItem)
+            Dim efficiency As Decimal = CDec(cbEfficiency.Text)
 
 
             'Calculating results'
@@ -59,7 +73,7 @@
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
-        Me.Close()
+        Application.Exit()
 
     End Sub
 
@@ -116,6 +130,41 @@
     End Sub
 
     Private Sub lblCostMl_Click(sender As Object, e As EventArgs) Handles lblCostMl.Click
+
+    End Sub
+
+    Private Sub btnConnect_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If usernameIn = "" Then
+
+            lblLoggedInAs.Text = ""
+
+        Else
+
+            lblLoggedInAs.Text = "Logged In As: " + usernameIn
+
+        End If
+
+    End Sub
+
+    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+        txtLiquid.Text = ""
+        txtMgml.Text = ""
+        txtCostML.Text = ""
+        cbEfficiency.Text = ""
+        txtCostOfBottle.Text = ""
+        txtSizeOfBottle.Text = ""
+        lblNicotineAnswer.Text = ""
+        lblCostAnswer.Text = ""
+        lblCigAnswer.Text = ""
+        lblCostPerMgNicAnswer.Text = ""
+
+    End Sub
+
+    Private Sub lblTodaysDate_Click(sender As Object, e As EventArgs) Handles lblTodaysDate.Click
 
     End Sub
 End Class
