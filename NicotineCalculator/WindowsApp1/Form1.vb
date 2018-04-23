@@ -1,5 +1,7 @@
-﻿Public Class Form1
+﻿Imports MySql.Data.MySqlClient
+Public Class Form1
     Dim usernameIn As String = LoginForm1.UsernameTextBox.Text
+    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=userNic;")
 
 
     'TODO:

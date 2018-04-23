@@ -3,7 +3,7 @@ Public Class signUpForm
     'Todo:
     'Swap strings as .texts
     'dfgfdg
-    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=root;password=Artificial1!1!")
+    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=userNic;")
 
 
 
