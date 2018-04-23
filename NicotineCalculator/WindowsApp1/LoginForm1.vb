@@ -3,7 +3,7 @@ Imports MySql.Data.MySqlClient
 
 Public Class LoginForm1
     Dim username As String
-    Dim connection As New MySqlConnection("datasource=localhost;port=3306;username=userNic")
+    Dim connection As New MySqlConnection("datasource=74.14.27.116;port=3306;username=userNic")
 
     Private Sub OK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OK.Click
 
